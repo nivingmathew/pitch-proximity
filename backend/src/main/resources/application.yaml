@@ -11,10 +11,11 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate:
         format_sql: true
 
   flyway:
-    enabled: false # We will enable Flyway in Card 2
+    enabled: true
+    baseline-on-migrate: true
