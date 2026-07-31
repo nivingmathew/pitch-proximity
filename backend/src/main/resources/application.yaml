@@ -1,3 +1,20 @@
 spring:
   application:
     name: backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pitch_proximity
+    username: ${DB_USER:pitch_admin}
+    password: ${DB_PASSWORD:rootpassword}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: false # We will enable Flyway in Card 2
