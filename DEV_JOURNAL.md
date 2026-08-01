@@ -35,3 +35,15 @@ Map the PostgreSQL `football_events` schema to a Java JPA Entity, construct a na
 * Built `FootballEventRepository.java` extending `JpaRepository` with a custom native PostgreSQL query (`ORDER BY RANDOM() LIMIT 1`) to fetch random trivia events.
 * Implemented `QuestionController.java` with `@CrossOrigin` support, exposing the `/api/question/random` endpoint.
 * Verified end-to-end data flow: HTTP GET requests successfully fetch random football questions from PostgreSQL via Spring Boot.
+
+---
+
+## Day 2 - Sprint 1 (Card 4: React UI Setup & Slider Component)
+
+### Goal
+Initialize the React frontend application using Vite, clean out starter boilerplate, and construct a mobile-first slider UI for numerical year inputs.
+
+### What Was Built Today
+* Generated the React 18 / Vite frontend inside the `frontend/` monorepo directory.
+* Built the core `<input type="range">` slider component driven by React state (`useState`), bounded between 1990 and 2026.
+* Verified real-time client-side rendering as slider coordinates update dynamically on user input.
