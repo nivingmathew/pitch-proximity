@@ -47,3 +47,16 @@ Initialize the React frontend application using Vite, clean out starter boilerpl
 * Generated the React 18 / Vite frontend inside the `frontend/` monorepo directory.
 * Built the core `<input type="range">` slider component driven by React state (`useState`), bounded between 1990 and 2026.
 * Verified real-time client-side rendering as slider coordinates update dynamically on user input.
+
+---
+
+## Day 3 - Sprint 1 (Card 5: Full End-to-End Integration)
+
+### Goal
+Connect the React.js frontend to the Spring Boot REST API using Axios, validating the full end-to-end data flow for the Walking Skeleton.
+
+### What Was Built Today
+* Installed `axios` in the React application for handling HTTP requests.
+* Integrated `useEffect` and `useState` hooks to fetch random football questions from `http://localhost:8080/api/question/random` on component mount.
+* Added error handling and loading indicators to handle network delay or server downtime gracefully.
+* Validated full stack integration: Database (PostgreSQL) -> Backend (Spring Boot) -> Frontend (React).
